@@ -79,15 +79,16 @@ function App() {
             100% { background-position: 0% 50%; }
           }
 
-          .header .invitation {
-            font-size: 28px;
-            color: #4A2C40;
-            font-weight: 300;
-            font-style: italic;
-            margin-bottom: 12px;
-            letter-spacing: 0.8px;
-            animation: fadeInText 2s ease-in-out;
-          }
+         .header .invitation {
+  font-size: 28px;
+  color: #4A2C40;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 12px;
+  letter-spacing: 0.8px;
+  animation: fadeInText 2s ease-in-out;
+  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif; /* Thêm font dự phòng */
+}
 
           @keyframes fadeInText {
             0% { opacity: 0; transform: translateY(20px); }
