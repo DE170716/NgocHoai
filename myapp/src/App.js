@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Confetti from "react-confetti";
-import { FaGraduationCap, FaMapMarkerAlt, FaClock } from 'react-icons/fa'; // Import icons
+import { FaGraduationCap, FaMapMarkerAlt, FaClock } from "react-icons/fa"; // Import icons
 
 function App() {
   const [windowSize, setWindowSize] = useState({
@@ -104,21 +104,22 @@ function App() {
           }
 
           .image-container {
-            margin: 32px auto;
-            position: relative;
-            width: 280px;
-            height: 280px;
-            margin-left: auto;
-            margin-right: auto;
-          }
+  margin: 32px auto;
+  position: relative;
+  width: 280px;
+  height: 280px; 
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; 
+}
 
-          .profile-image {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 6px solid #ff69b4; /* Solid pink border */
-          }
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain; 
+  border: 6px solid #ff69b4;
+}
 
           .content {
             margin-bottom: 24px;
@@ -212,7 +213,7 @@ function App() {
           </div>
           <div className="image-container">
             <img
-              src="/hoai.jpg"
+              src="/hoai1.jpg"
               className="profile-image"
               alt="Nguyễn Thị Hà Anh's profile"
               aria-label="Ảnh đại diện của Nguyễn Thị Hà Anh"
@@ -229,14 +230,17 @@ function App() {
                 <FaClock /> Thông Tin Lễ Tốt Nghiệp
               </h2>
               <p>
-                <FaGraduationCap /> <strong>Thời gian:</strong> 14:00 chiều, Thứ Bảy, ngày 21/06/2025
+                <FaGraduationCap /> <strong>Thời gian:</strong> 15:00 chiều, Thứ
+                Bảy, ngày 21/06/2025
               </p>
               <p>
-                <FaMapMarkerAlt /> <strong>Địa điểm:</strong> Sảnh A5, 459 Tôn Đức Thắng, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng
+                <FaMapMarkerAlt /> <strong>Địa điểm:</strong> Sảnh A5, 459 Tôn
+                Đức Thắng, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng
               </p>
             </div>
             <p className="quote">
-              "Hành trình vạn dặm bắt đầu từ một bước chân. Cảm ơn quý khách đã đồng hành cùng Ngọc Hoài!" -{" "}
+              "Sự hiện diện của bạn trong ngày đặc biệt ấy sẽ là một món quà lớn dành cho Hoài" 
+              <br></br> - {" "}
               <span className="quote-author">Nguyễn Thiện Ngọc Hoài</span>
             </p>
           </div>
