@@ -79,16 +79,16 @@ function App() {
             100% { background-position: 0% 50%; }
           }
 
-         .header .invitation {
-  font-size: 28px;
-  color: #4A2C40;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: 12px;
-  letter-spacing: 0.8px;
-  animation: fadeInText 2s ease-in-out;
-  font-family: 'Poppins', 'Roboto', 'Arial', sans-serif; /* Thêm font dự phòng */
-}
+          .header .invitation {
+            font-size: 28px;
+            color: #4A2C40;
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 12px;
+            letter-spacing: 0.8px;
+            animation: fadeInText 2s ease-in-out;
+            font-family: 'Poppins', 'Roboto', 'Arial', sans-serif;
+          }
 
           @keyframes fadeInText {
             0% { opacity: 0; transform: translateY(20px); }
@@ -105,22 +105,22 @@ function App() {
           }
 
           .image-container {
-  margin: 32px auto;
-  position: relative;
-  width: 280px;
-  height: 280px; 
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden; 
-}
+            margin: 32px auto;
+            position: relative;
+            width: 280px;
+            height: 280px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+          }
 
-.profile-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: contain; 
-  border: 6px solid #ff69b4;
-}
+          .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: contain;
+            border: 6px solid #ff69b4;
+          }
 
           .content {
             margin-bottom: 24px;
@@ -167,6 +167,14 @@ function App() {
           .quote-author {
             color: #db7093;
             font-weight: 600;
+            display: inline-block;
+          }
+
+          .heart-icon {
+            font-size: 16px;
+            color: #ff69b4;
+            margin-left: 4px;
+            vertical-align: middle;
           }
 
           .button-container {
@@ -207,7 +215,7 @@ function App() {
         />
         <div className="card">
           <div className="header">
-            <h1 className="title">Thiệp Mời Lễ Tốt Nghiệp</h1>
+            <h1 className="title">Thiệp Mời <br/>Lễ Tốt Nghiệp</h1>
             <p className="invitation">
               Thân mời mọi người đến chung vui cùng Ngọc Hoài!
             </p>
@@ -216,8 +224,8 @@ function App() {
             <img
               src="/hoai1.jpg"
               className="profile-image"
-              alt="Nguyễn Thị Hà Anh's profile"
-              aria-label="Ảnh đại diện của Nguyễn Thị Hà Anh"
+              alt="Nguyễn Thiện Ngọc Hoài's profile"
+              aria-label="Ảnh đại diện của Nguyễn Thiện Ngọc Hoài"
             />
           </div>
           <div className="header">
@@ -228,7 +236,7 @@ function App() {
           <div className="content">
             <div className="event-details">
               <h2>
-                <FaClock /> Thông Tin Lễ Tốt Nghiệp
+                <FaClock /> Thông Tin <br/>Lễ Tốt Nghiệp
               </h2>
               <p>
                 <FaGraduationCap /> <strong>Thời gian:</strong> 15:00 chiều, Thứ
@@ -241,8 +249,13 @@ function App() {
             </div>
             <p className="quote">
               "Sự hiện diện của bạn trong ngày đặc biệt ấy sẽ là một món quà lớn dành cho Hoài" 
-              <br></br> - {" "}
-              <span className="quote-author">Nguyễn Thiện Ngọc Hoài</span>
+              <br></br> {" "}
+              <span className="quote-author">
+              
+                <span className="heart-icon">❤️</span>
+                <span className="heart-icon">❤️</span>
+                <span className="heart-icon">❤️</span>
+              </span>
             </p>
           </div>
         </div>
